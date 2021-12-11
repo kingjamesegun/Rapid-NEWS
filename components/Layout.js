@@ -1,5 +1,6 @@
 import Meta from "./Meta"
 import Nav from "./Navbar"
+import Footer from './Footer';
 
 export default function Layout({ children }) {
   return (
@@ -7,6 +8,7 @@ export default function Layout({ children }) {
       <Meta/>
       <Nav/>
       <main>{children}</main>
+      <Footer/>
     </>
   )
 }

@@ -1,6 +1,11 @@
 .card{
     padding: 20% 10%;
 }
+@media(max-width:425px){
+    .card{
+        padding: 5% 10%;
+    }
+}
 .card__main{
     background: none;
 }

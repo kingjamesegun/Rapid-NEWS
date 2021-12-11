@@ -1,0 +1,8 @@
+.browse{
+    background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.52), hsla(180, 2%, 8%, 0.73)),url('../public/images/newsfull.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+
+}

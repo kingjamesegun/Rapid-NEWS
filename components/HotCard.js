@@ -1,13 +1,14 @@
 import React from 'react'
 
-function HotCard() {
+function HotCard({images, type}) {
     return (
         <div className={`mx-3 my-5 border-l-4 border-solid pl-2 border-blue-300`}>
+            
             <div className={`font-sans uppercase text-xs font-semibold text-gray-500`}>
-                Hot topic
+                {type}
             </div>
             <p className={`font-serif text-base py:1 lg:py-2 font-bold text-black `}>
-                Coronavirus à Paris et en Ile-de-France aujourd'hui, la situation - sortiraparis
+               {images.name}
             </p>
             <div className={`font-sans text-xs text-gray-500`}>
                 Sat, 04 Dec 2021 
