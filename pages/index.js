@@ -15,7 +15,7 @@ export default function Home({news, type}) {
         <Quote/>
       </div>
       <Browse/>
-      <Columnist/>
+      {/* <Columnist/> */}
     </div>
   )
 }
@@ -35,11 +35,11 @@ export async function getStaticProps(context) {
 
   const {value, _type} = await response.json()
 
-
+const data = value.slice(0,3)
 
   return {
     props: {
-      news: value || null,
+      news: data || null,
       type: _type
     } // will be passed to the page component as props
   }

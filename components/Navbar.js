@@ -3,10 +3,8 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Treading', href: '/treading', current: true },
+  { name: 'Categories', href: '/categories', current: false },
 ]
 
 function classNames(...classes) {
@@ -18,7 +16,7 @@ export default function Example() {
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-2 md:px-8 sm:px-6 lg:px-10 conatiner">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -35,12 +33,12 @@ export default function Example() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                    src="/images/logo2.svg"
                     alt="Workflow"
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                    src="/images/logo2.svg"
                     alt="Workflow"
                   />
                 </div>
