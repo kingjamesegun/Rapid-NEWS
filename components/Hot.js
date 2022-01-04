@@ -4,14 +4,11 @@ import hotStyles from '../styles/Hot.module.css'
 function Hot({news, type}) {
     return (
         <div className={`hot container mt-12 py-5`}>
-            {/* geographical */}
             <div className="grid  grid-cols-1 md:grid-cols-3  gap-4">
                 <div>
                     {news.map(image =>(
                         <HotCard key={image.name} images={image} type={type}/>
                     ))}
-                    {/* <HotCard/>
-                    <HotCard/> */}
                 </div>
                 <div className={`col-span-2 m-3 ${hotStyles.hot__main}`}>
                     <div className="p-5">
